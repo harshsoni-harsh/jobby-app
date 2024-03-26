@@ -93,7 +93,7 @@ class JobDetails extends Component {
                 <img
                   className="size-50"
                   src={jobDetails.companyLogoUrl}
-                  alt={jobDetails.title}
+                  alt="job details company logo"
                 />
                 <div>
                   <p className="text-bold m-0 mobile-title">
@@ -146,7 +146,7 @@ class JobDetails extends Component {
               <div className="flex gap-2 mobile-flex-col">
                 <p>{jobDetails.lifeAtCompany.description}</p>
                 <img
-                  alt="life-at-company"
+                  alt="life at company"
                   src={jobDetails.lifeAtCompany.imageUrl}
                   className="height-fit-content mobile-size-image"
                 />
@@ -161,7 +161,7 @@ class JobDetails extends Component {
                       <img
                         className="size-50"
                         src={job.companyLogoUrl}
-                        alt={job.title}
+                        alt="similar job company logo"
                       />
                       <div>
                         <p className="text-bold m-0">{job.title}</p>

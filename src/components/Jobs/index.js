@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
-import {IoIosSearch} from 'react-icons/io'
+import {BsSearch} from 'react-icons/bs'
 import Loader from 'react-loader-spinner'
 
 import Header from '../Header'
@@ -241,41 +241,49 @@ class Jobs extends Component {
               onChange={this.changeSearchInput}
               type="search"
               placeholder="Search"
+              id="search"
             />
-            <div>
-              <IoIosSearch />
-            </div>
+            <label htmlFor="search">
+              <button type="button" data-testid="searchButton">
+                {' '}
+                <BsSearch className="search-icon" />{' '}
+              </button>
+            </label>
           </div>
           <div className="sidepane">
             {this.profileSection()}
             <hr />
             <div>
-              <p>Type of Employment</p>
-              {employmentTypesList.map(type => (
-                <div className="filter">
-                  <input
-                    type="checkbox"
-                    onChange={this.addEmploymentType}
-                    id={type.employmentTypeId}
-                  />
-                  <label htmlFor={type.employmentTypeId}>{type.label}</label>
-                </div>
-              ))}
+              <h1 className="filter-heading">Type of Employment</h1>
+              <ul>
+                {employmentTypesList.map(type => (
+                  <li className="filter" key={type.employmentTypeId}>
+                    <input
+                      type="checkbox"
+                      onChange={this.addEmploymentType}
+                      id={type.employmentTypeId}
+                    />
+                    <label htmlFor={type.employmentTypeId}>{type.label}</label>
+                  </li>
+                ))}
+              </ul>
             </div>
             <hr />
             <div>
-              <p>Salary Range</p>
-              {salaryRangesList.map(type => (
-                <div className="filter">
-                  <input
-                    type="radio"
-                    onChange={this.changeSalary}
-                    name="salary"
-                    id={type.salaryRangeId}
-                  />
-                  <label htmlFor={type.salaryRangeId}>{type.label}</label>
-                </div>
-              ))}
+              <h1 className="filter-heading">Salary Range</h1>
+              <ul>
+                {salaryRangesList.map(type => (
+                  <li className="filter" key={type.salaryRangeId}>
+                    <input
+                      type="radio"
+                      onChange={this.changeSalary}
+                      name="salary"
+                      id={type.salaryRangeId}
+                    />
+                    <label htmlFor={type.salaryRangeId}>{type.label}</label>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           <div className="flex-grow-1">
@@ -285,10 +293,14 @@ class Jobs extends Component {
                 onChange={this.changeSearchInput}
                 type="search"
                 placeholder="Search"
+                id="searchBtn"
               />
-              <div>
-                <IoIosSearch />
-              </div>
+              <label htmlFor="searchBtn">
+                <button type="button" data-testid="searchButton">
+                  {' '}
+                  <BsSearch className="search-icon" />{' '}
+                </button>
+              </label>
             </div>
             {this.jobSection()}
           </div>

@@ -20,7 +20,7 @@ const JobCard = props => {
     <Link to={'/jobs/'.concat(id)}>
       <li className="job-card p-4">
         <div className="flex align-center gap-2">
-          <img className="size-70" src={companyLogoUrl} alt={title} />
+          <img className="size-70" src={companyLogoUrl} alt="company logo" />
           <div>
             <h1 className="font-24 m-0">{title}</h1>
             <p className="font-20 flex gap-0_5 align-center m-0 mt-10">
