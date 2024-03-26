@@ -1,0 +1,55 @@
+.job-card {
+    margin: 25px 0;
+    border-radius: 10px;
+    background-color: #272727;
+}
+.size-70 {
+    height: 70px;
+    width: 70px;
+}
+.p-4 {
+    padding: 20px;
+}
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.gap-0_5 {
+    gap: 5px;
+}
+.gap-2 {
+    gap: 20px;
+}
+.star {
+    color: #fbbf24;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-24 {
+    font-size: 24px;
+}
+.m-0 {
+    margin: 0;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.text-bold {
+    font-weight: bold;
+}
+a {
+    color: #f8fafc;
+    text-decoration: none;
+}

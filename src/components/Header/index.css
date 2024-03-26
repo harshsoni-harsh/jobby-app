@@ -1,0 +1,64 @@
+.header-div-desktop {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:  #272727;
+}
+.header-div-desktop > img {
+    height: 30px;
+}
+.header-div-desktop > div {
+    display: flex;
+    gap: 15px;
+}
+.header-div-desktop > div > a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.header-div-desktop > button {
+    background-color: #6366f1;
+    border: 0;
+    padding: 10px 25px;
+    height: fit-content;
+    color: white;
+    border-radius: 5px;
+}
+.header-div-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #272727;
+}
+.header-div-mobile > img {
+    height: 22px;
+}
+.header-div-mobile > div {
+    display: flex;
+    align-items: center;
+}
+.header-div-mobile > div > a {
+    color: white;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.header-div-mobile > div > button {
+    font-size: 20px;
+    vertical-align: middle;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .header-div-desktop {
+        display: flex;
+    }
+    .header-div-mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f1f5f9;
+    background-color: #121212;
+}
