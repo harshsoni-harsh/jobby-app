@@ -132,7 +132,10 @@ class JobDetails extends Component {
               <h1 className="font-18 mt-40">Skills</h1>
               <ul className="flex justify-center flex-wrap gap-2">
                 {jobDetails.skills.map(skill => (
-                  <li className="flex gap-2 align-center text-bold font-14 size-150 mobile-size-skill">
+                  <li
+                    className="flex gap-2 align-center text-bold font-14 size-150 mobile-size-skill"
+                    key={skill.name}
+                  >
                     <img
                       alt={skill.name}
                       src={skill.imageUrl}
@@ -200,7 +203,7 @@ class JobDetails extends Component {
             />
             <h1>Oops! Something Went Wrong</h1>
             <p>We cannot seem to find the page you are looking for.</p>
-            <button type="button" onClick={() => this.fetchJob()}>
+            <button type="button" onClick={this.fetchJob}>
               Retry
             </button>
           </div>

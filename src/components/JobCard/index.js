@@ -17,8 +17,8 @@ const JobCard = props => {
     id,
   } = jobDetails
   return (
-    <Link to={'/jobs/'.concat(id)}>
-      <li className="job-card p-4">
+    <li className="job-card p-4">
+      <Link to={'/jobs/'.concat(id)}>
         <div className="flex align-center gap-2">
           <img className="size-70" src={companyLogoUrl} alt="company logo" />
           <div>
@@ -45,8 +45,8 @@ const JobCard = props => {
         <hr />
         <p className="text-bold">Description</p>
         <p>{jobDescription}</p>
-      </li>
-    </Link>
+      </Link>
+    </li>
   )
 }
 
