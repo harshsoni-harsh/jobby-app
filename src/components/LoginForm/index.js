@@ -49,14 +49,14 @@ class LoginForm extends Component {
             value={username}
             onChange={this.onChangeUsername}
             id="username"
-            placeholder="Username"
+            placeholder="E.g. rahul"
           />
           <label htmlFor="password">PASSWORD</label>
           <input
             value={password}
             onChange={this.onChangePassword}
             id="password"
-            placeholder="Password"
+            placeholder="E.g. rahul@2021"
             type="password"
           />
           <button type="submit">Login</button>
